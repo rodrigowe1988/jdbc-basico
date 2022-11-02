@@ -9,13 +9,14 @@ public class ConnectionJDBC {
     public static void main(String[] args) {
 
         // 1 - NÃO ESQUECER DE BAIXAR O DRIVER PARA O BANCO DE DADOS QUE IRÁ UTILIZAR! (Como demonstrado na parte 1 do curso)
+        // https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.31
 
         // 2 - Definir parâmetros para se conectar ao banco de dados MySQL.
         String driver = "mysql";
         String dataBaseAddress = "localhost";
         String dataBaseName = "digital_innovation_one";
-        String user = "root";
-        String password = "password";
+        String user = "db_tests_user";
+        String password = "Test@ndo123";
 
         // 3 - Construção da string de conexão.
         StringBuilder sb = new StringBuilder("jdbc:")
